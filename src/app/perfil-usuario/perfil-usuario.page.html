@@ -1,0 +1,106 @@
+<ion-header >
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+      
+    </ion-buttons>
+    <ion-title> Perfil de usuario
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ 
+     <ion-card>
+      <div class="menu-header-bg"></div>
+      <div class="contenido-header">
+        <img [src]="profileImg">
+      
+        <br>
+        
+          <h2>{{profile?.displayName}}</h2>
+          
+        
+      </div>
+      <br>
+      <br>
+      <ion-item>
+        <ion-icon name="pin" slot="start"></ion-icon>
+        <ion-label>Usuario:</ion-label>
+        <ion-button fill="outline" href="../actualizar-usu" slot="end">Actualizar</ion-button>
+      </ion-item>
+      <ion-card-content>
+      
+        <ion-list>
+          <ion-list-header>Informacion:</ion-list-header>
+          <ion-item>
+            <ion-thumbnail slot="start">
+              
+              <img src="https://i.ibb.co/25Yvzxj/6.png">
+            </ion-thumbnail>
+            <ion-label>
+              <h3>Nombres :
+              </h3>
+              <p>{{profile?.givenName}}</p>
+            </ion-label>
+            
+          </ion-item>
+          <ion-item>
+            <ion-thumbnail slot="start">
+              <img src="https://i.ibb.co/QdwvL36/8.png">
+            </ion-thumbnail>
+            <ion-label>
+              <h3>Apellidos :</h3>
+              {{profile?.surname}}
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-thumbnail slot="start">
+              <img src="https://i.ibb.co/kSxCNx0/7.png">
+            </ion-thumbnail>
+            <ion-label>
+              <h3>Email :</h3>
+              {{profile?.mail}} 
+            </ion-label>
+          </ion-item>
+    
+          <ion-item>
+            <ion-thumbnail slot="start">
+              <img src="https://i.ibb.co/McQj2Yc/9.png">
+            </ion-thumbnail>
+            <ion-label>
+              <h3>Rol :</h3>
+                <p></p>
+                <p>{{profile?.jobTitle}} Enfermeria</p>
+            </ion-label>
+          </ion-item>
+    
+    
+          <ion-item>
+            <ion-thumbnail slot="start">
+              <img src="https://i.ibb.co/sF2bqc1/12.png">
+            </ion-thumbnail>
+            <ion-label>
+              <h3>Ciclo :</h3>
+              <p># 9</p>
+            </ion-label>
+          </ion-item>
+    
+          <ion-item>
+            <ion-thumbnail slot="start">
+              <img src="https://i.ibb.co/Cpyf2QK/10.png">
+            </ion-thumbnail>
+            <ion-label>
+              <h3>Sede:</h3>
+              {{profile?.officeLocation}}
+            </ion-label>
+          </ion-item>
+    
+        </ion-list>
+    </ion-card-content>
+    <p>Politecnico internacional® By Oscar Rodriguez Lopez</p>
+    </ion-card>
+
+ 
+</ion-content>
+

@@ -1,0 +1,40 @@
+<ion-toolbar>
+  <ion-list id="inbox-list">
+    <div class="menu-header-bg">
+      <div class="fnd"></div>
+    </div>
+    <div class="contenido-header">
+        <h2>¿Olvidaste tu contraseña?</h2>
+    </div>
+  </ion-list>
+</ion-toolbar>
+
+
+<ion-content>
+
+  <div class="contenido-inicio">
+    <ion-grid class="org">
+      <form action="" method="post">
+        <ion-row>
+          <ion-col class="inputs">
+            <ion-item>
+              <ion-label position="floating">Correo:</ion-label>
+              <ion-input type="email" required></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col class="inputs">
+            <ion-button expand="block" routerLink="../login/" required>Recuperar contraseña</ion-button>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="inputs">
+            <ion-button expand="block" routerLink="../login/" required>Volver</ion-button>
+          </ion-col>
+        </ion-row>
+      </form>
+    </ion-grid>
+  </div>
+</ion-content>

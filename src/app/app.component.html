@@ -1,0 +1,63 @@
+<ion-app>
+  <ion-split-pane contentId="main-content" >
+    <ion-menu contentId="main-content" type="overlay" >
+      <ion-content >
+        <ion-list id="inbox-list" >
+          <div class="menu-header-bg"></div>
+            <div class="contenido-header">
+              <img [src]="profileImg">
+              <ion-label>
+                <h2>{{profile?.displayName}}</h2>
+                <p>{{profile?.jobTitle}}</p>
+              </ion-label>
+              
+            </div>
+            <div class="action-button">
+              
+             <!--  <ion-button href="/login">Salir
+                 <ion-icon name="exit-outline"></ion-icon>
+              </ion-button> -->
+              <ion-list>
+                <ion-item lines="full">
+                  <ion-icon slot="start" name="moon"></ion-icon>
+                  <ion-label>Modo</ion-label>
+                  <ion-toggle id="themeToggle" slot="end" (ionChange)="cambio()">
+                  </ion-toggle>
+                </ion-item>
+                </ion-list>
+            </div>
+          <!-- <ion-list-header  color="primary">Enfermería</ion-list-header> -->
+          
+          <ion-note></ion-note>
+            <div class="menu-toggle">
+              <ion-item lines="none">
+              <ion-button size="l" fill="clear" (click)='logout()'>
+                <ion-icon style="zoom:1.5;" slot="start" name="exit"></ion-icon>Cerrar Sesión
+              </ion-button>
+              </ion-item>
+          <ion-menu-toggle    auto-hide="false" *ngFor="let p of appPages; let i = index" width="100%">
+            <ion-item (click)="selectedIndex = i"  routerDirection="root"
+              [routerLink]="[p.url]"
+              lines="none" detail="false" [class.selected]="selectedIndex == i">
+              <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
+              <ion-label>{{ p.title }}</ion-label>
+            </ion-item>
+            
+          </ion-menu-toggle>
+          </div>
+        </ion-list>
+        <!-- <ion-footer class="ion-no-border">
+          <div class="bar bar-footer bar-assertive footer-poli">
+            <h1 class="title ">Politécnico internacional</h1>
+            <p> institución de Educación Superior. SNES 4727 +4135 DEL 11 de nov. de
+              2004.</p>
+          </div>
+        </ion-footer> -->
+        
+      </ion-content>
+
+    </ion-menu>
+    
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>

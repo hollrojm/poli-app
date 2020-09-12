@@ -1,0 +1,77 @@
+
+  <ion-toolbar >
+    
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <div class="contenido">
+      <ion-label>
+      <p>Bienvenido,</p>
+      <h2>{{profile?.displayName}}</h2>
+      <p>{{profile?.officeLocation}}</p>
+      </ion-label>
+      <ion-avatar >
+      <img >
+      
+        </ion-avatar>
+    </div>
+    <div class="toolbar-inicio">
+    </div>
+  </ion-toolbar>
+  
+
+
+<ion-content>
+  <div class="contenido-inicio">
+    <ion-label>
+    </ion-label>
+    <ion-list class="menu-principal">
+      <h4>Hola, ¿qué aprenderas hoy?</h4>
+      <ion-item  href="/clases" >
+       <ion-icon class="icon"
+         src="assets/icon/chalkboard-teacher-solid.svg">
+       </ion-icon>
+        <p class="titulo-boton"> Clases</p>
+        
+      </ion-item>
+
+     <ion-item class="item " href="/ejercicios">
+       <ion-icon class="icon"
+         src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGc+DQoJCTxnPg0KCQkJPHBvbHlnb24gcG9pbnRzPSIzODQuMzIsNDgwIDMyLjMyLDQ4MCAzMi4zMiw2NCA5Ni4zMiw2NCA5Ni4zMiwzMiAwLjMyLDMyIDAuMzIsNTEyIDQxNi4zMiw1MTIgNDE2LjMyLDI1NiAzODQuMzIsMjU2IAkJCSIvPg0KCQkJPHBhdGggZD0iTTI4OC4zMiwwaC0xNjB2OTZoMTYwVjB6IE0yNTYuMzIsNjRoLTk2VjMyaDk2VjY0eiIvPg0KCQkJPHBhdGggZD0iTTE5MS43NiwyMzAuMDMyTDE2MS42LDM1MC43MmwxMjAuNjcyLTMwLjE2TDUxMS42OCw5MS4yTDQyMS4xMiwwLjY0TDM4OS44MDgsMzJIMzIwLjMydjMyaDM3LjQ4OEwxOTEuNzYsMjMwLjAzMnoNCgkJCQkgTTIwNS41ODQsMzA2LjgzMmw5LjI5Ni0zNy4yMzJsMjcuOTIsMjcuOTJMMjA1LjU4NCwzMDYuODMyeiBNNDIxLjEyLDQ1Ljg4OEw0NjYuNDMyLDkxLjJsLTIyLjY0LDIyLjU3NmwtNDUuMjQ4LTQ1LjI2NA0KCQkJCUw0MjEuMTIsNDUuODg4eiBNNDIxLjEyLDEzNi40TDI3NC4wNDgsMjgzLjQ3MmwtNDUuMjY0LTQ1LjI0OEwzNzUuOTIsOTEuMkw0MjEuMTIsMTM2LjR6Ii8+DQoJCQk8cmVjdCB4PSIzMjAuMzIiIHk9IjMyMCIgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIi8+DQoJCQk8cG9seWdvbiBwb2ludHM9IjY0LjMyLDk2IDY0LjMyLDQ0OCAzNTIuMzIsNDQ4IDM1Mi4zMiwzODQgMzIwLjMyLDM4NCAzMjAuMzIsNDE2IDk2LjMyLDQxNiA5Ni4zMiw5NiAJCQkiLz4NCgkJPC9nPg0KCTwvZz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K">
+         </ion-icon>
+       <p class="titulo-boton2"> Ejercicios</p>
+     </ion-item>
+
+     <ion-item class="item" href="/videos">
+       <ion-icon class="icon"
+         src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNDk2IDQ5NiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDk2IDQ5NjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHJlY3QgeD0iMjI0IiB5PSIxNDQiIHN0eWxlPSJmaWxsOiNGRkNCNTc7IiB3aWR0aD0iMjI0IiBoZWlnaHQ9IjEyOCIvPg0KPGc+DQoJPHJlY3QgeD0iMjU2IiB5PSIzODQiIHN0eWxlPSJmaWxsOiMzRjNBMzQ7IiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiLz4NCgk8cGF0aCBzdHlsZT0iZmlsbDojM0YzQTM0OyIgZD0iTTE2LDY0aDI0MHYxNmgxNlY0MGMwLTIyLjA1Ni0xNy45NDQtNDAtNDAtNDBINDBDMTcuOTQ0LDAsMCwxNy45NDQsMCw0MHYzNjBoMTZWNjR6IE00MCwxNmgxOTINCgkJYzEzLjIzMiwwLDI0LDEwLjc2OCwyNCwyNHY4SDE2di04QzE2LDI2Ljc2OCwyNi43NjgsMTYsNDAsMTZ6Ii8+DQoJPHBhdGggc3R5bGU9ImZpbGw6IzNGM0EzNDsiIGQ9Ik0wLDQ1NmMwLDIyLjA1NiwxNy45NDQsNDAsNDAsNDBoMTkyYzIyLjA1NiwwLDQwLTE3Ljk0NCw0MC00MHYtNDBIMFY0NTZ6IE0xNiw0MzJoMjQwdjI0DQoJCWMwLDEzLjIzMi0xMC43NjgsMjQtMjQsMjRINDBjLTEzLjIzMiwwLTI0LTEwLjc2OC0yNC0yNFY0MzJ6Ii8+DQoJPHJlY3QgeD0iOTYiIHk9IjQ0OCIgc3R5bGU9ImZpbGw6IzNGM0EzNDsiIHdpZHRoPSI4MCIgaGVpZ2h0PSIxNiIvPg0KCTxwYXRoIHN0eWxlPSJmaWxsOiMzRjNBMzQ7IiBkPSJNNDcyLDk2SDIwMGMtMTMuMjMyLDAtMjQsMTAuNzY4LTI0LDI0djIyNGMwLDEzLjIzMiwxMC43NjgsMjQsMjQsMjRoMjcyYzEzLjIzMiwwLDI0LTEwLjc2OCwyNC0yNA0KCQlWMTIwQzQ5NiwxMDYuNzY4LDQ4NS4yMzIsOTYsNDcyLDk2eiBNNDgwLDM0NGMwLDQuNDE2LTMuNTg0LDgtOCw4SDIwMGMtNC40MTYsMC04LTMuNTg0LTgtOFYxMjBjMC00LjQxNiwzLjU4NC04LDgtOGgyNzINCgkJYzQuNDE2LDAsOCwzLjU4NCw4LDhWMzQ0eiIvPg0KCTxwYXRoIHN0eWxlPSJmaWxsOiMzRjNBMzQ7IiBkPSJNMjk2LDE1NS4wNTZ2MTA1Ljg4OEw0MDEuODg4LDIwOEwyOTYsMTU1LjA1NnogTTMxMiwxODAuOTQ0TDM2Ni4xMTIsMjA4TDMxMiwyMzUuMDU2VjE4MC45NDR6Ii8+DQoJPHJlY3QgeD0iMzYwIiB5PSIzMDQiIHN0eWxlPSJmaWxsOiMzRjNBMzQ7IiB3aWR0aD0iMTA0IiBoZWlnaHQ9IjE2Ii8+DQoJPHJlY3QgeD0iMjA4IiB5PSIzMDQiIHN0eWxlPSJmaWxsOiMzRjNBMzQ7IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjE2Ii8+DQoJPHBvbHlnb24gc3R5bGU9ImZpbGw6IzNGM0EzNDsiIHBvaW50cz0iMjI0LDE0NCAyNDgsMTQ0IDI0OCwxMjggMjA4LDEyOCAyMDgsMTY4IDIyNCwxNjggCSIvPg0KCTxwb2x5Z29uIHN0eWxlPSJmaWxsOiMzRjNBMzQ7IiBwb2ludHM9IjI0OCwyNzIgMjI0LDI3MiAyMjQsMjQ4IDIwOCwyNDggMjA4LDI4OCAyNDgsMjg4IAkiLz4NCgk8cG9seWdvbiBzdHlsZT0iZmlsbDojM0YzQTM0OyIgcG9pbnRzPSI0MjQsMTQ0IDQ0OCwxNDQgNDQ4LDE2OCA0NjQsMTY4IDQ2NCwxMjggNDI0LDEyOCAJIi8+DQoJPHBvbHlnb24gc3R5bGU9ImZpbGw6IzNGM0EzNDsiIHBvaW50cz0iNDQ4LDI3MiA0MjQsMjcyIDQyNCwyODggNDY0LDI4OCA0NjQsMjQ4IDQ0OCwyNDggCSIvPg0KCTxwb2x5Z29uIHN0eWxlPSJmaWxsOiMzRjNBMzQ7IiBwb2ludHM9IjE2MCw5NiAxNjAsODAgMzIsODAgMzIsNDAwIDI0MCw0MDAgMjQwLDM4NCA0OCwzODQgNDgsOTYgCSIvPg0KPC9nPg0KPHBhdGggc3R5bGU9ImZpbGw6I0U1NjU2NTsiIGQ9Ik0zNjgsMzM2aC00OHYtNDhoNDhWMzM2eiBNMzM2LDMyMGgxNnYtMTZoLTE2VjMyMHoiLz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K">
+       </ion-icon>
+       <p class="titulo-boton"> Videos</p>
+     </ion-item>
+
+       <ion-item class="item" href="/simulador-clases">
+         <ion-icon class="icon"
+           src="assets/icon/user-nurse-solid.svg">
+           </ion-icon>
+         <p class="titulo-boton2"> Simulador</p>
+       </ion-item>
+       
+       <div class="sliders" >
+         <br>
+         <h5>   Videos Destacados</h5>
+         <ion-slides >
+           
+           <ion-slide *ngFor= "let slide of videos" class="slide">
+             <youtube-player [videoId]="slide.video" suggestedQuality="highres" [height]="130" [width]="180">
+             </youtube-player>
+           </ion-slide>
+           
+         </ion-slides>
+       </div>
+    </ion-list>
+    
+
+  </div>
+    
+
+</ion-content>

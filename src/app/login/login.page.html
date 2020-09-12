@@ -1,0 +1,81 @@
+<ion-toolbar>
+
+  <!-- <ion-list id="inbox-list"> -->
+    <div class="menu-header-bg">
+      <div class="fnd"></div>
+    </div>
+
+    <div class="contenido-header">
+      
+    </div>
+
+  <!-- </ion-list> -->
+</ion-toolbar>
+
+<ion-content>
+  <div class="contenido-inicio">
+    <ion-card class="org">
+      <ion-row>
+        <ion-col class="inputs">
+          <ion-item lines="none">
+            <ion-label position="floating">Correo:</ion-label>
+            <ion-input type="text" #email required></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <form action="" method="post">
+        <ion-row>
+          <ion-col class="inputs">
+            <ion-item lines="none">
+              <ion-label position="floating">Contraseña:</ion-label>
+              <ion-input color="dark" type="password" name="pass" id="pass" #password required></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="inputs">
+            <ion-button class="boton-inicio" expand="block"  (click)="onLogin(email, password)" >Inicio</ion-button>
+            <ion-button type="submit" fill="clear" expand="block" (click)="login()" >
+              <ion-icon  style="zoom:2.5;" class="icon" src="assets/icon/Outlook_icon2.svg">
+              </ion-icon >Ingresa con tu cuenta @PI </ion-button>
+          </ion-col>
+        </ion-row>
+      </form>
+      <ion-row>
+        <ion-col class="recordatorio">
+          <a href="../forgot-password/">¿Olvidaste tu contraseña?</a>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="recordatorio">
+          <a href="../register/">Crear cuenta</a>
+        </ion-col>
+      </ion-row>
+      <div class="social">
+      <ion-button fill="clear" href="https://es-la.facebook.com/politecnicointernacionalcolombia/">
+        <ion-icon style="zoom:1.5;" class="icon" src="assets/icon/facebook_icon.svg">
+        </ion-icon>
+      </ion-button>
+      <ion-button fill="clear" href="https://twitter.com/politecnicoin?lang=es">
+        <ion-icon style="zoom:1.5;" class="icon" src="assets/icon/twitter_icon2.svg">
+        </ion-icon>
+      </ion-button>
+      <ion-button fill="clear" href="https://www.instagram.com/politecnicoin/">
+        <ion-icon style="zoom:1.5;" class="icon" src="assets/icon/Instagram-icon.svg">
+        </ion-icon>
+      </ion-button>
+      <ion-button fill="clear" href="https://www.youtube.com/channel/UCAEC5XpWlPZlZBrirQ6oGLg">
+        <ion-icon style="zoom:1.5;" class="icon" src="assets/icon/youtube-icon.svg">
+        </ion-icon>
+      </ion-button>
+      <ion-button fill="clear" href="https://wa.me/573204816169?text=Buen%20Día"> <a></a>
+        <ion-icon style="zoom:1.5;" class="icon" src="assets/icon/whatsapp-icon.svg">
+        </ion-icon>
+      </ion-button>
+      </div>
+    </ion-card>
+    <br>
+
+  </div>
+</ion-content>

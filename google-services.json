@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "263056630690",
+    "firebase_url": "https://simuladorenfermeria.firebaseio.com",
+    "project_id": "simuladorenfermeria",
+    "storage_bucket": "simuladorenfermeria.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:263056630690:android:27c6b1f11a9151cb5248fb",
+        "android_client_info": {
+          "package_name": "com.simulador_enfermeria"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "263056630690-h5bclputqmvnt6rctcvm2padf4b3lm16.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQ0M5n5B-fJ0IdkdjsIkZzd6M3YE6A85M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "263056630690-h5bclputqmvnt6rctcvm2padf4b3lm16.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

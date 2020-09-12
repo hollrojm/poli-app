@@ -1,0 +1,98 @@
+<ion-header >
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+      
+    </ion-buttons>
+    <ion-title> Administrador
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ 
+     <ion-card>
+      <div class="menu-header-bg"></div>
+      <div class="contenido-header">
+        <img src="../assets/images/adm.png" alt="Avatar Administrador">
+      
+        <br>
+        <ion-label>
+          <h2>Politecnico Internacional</h2>
+          <p>Administrador</p>
+        </ion-label>
+      </div>
+      <br>
+      <br>
+      <ion-item>
+        <ion-icon name="pin" slot="start"></ion-icon>
+        <ion-label>Bienvenido !</ion-label>
+        <ion-button fill="outline" (click)="cerrar()" slot="end" type="submit">CERRAR SESION</ion-button>
+      </ion-item>
+      <ion-card-content>
+      
+        <ion-list>
+          <ion-list-header>Informacion:</ion-list-header>
+          <ion-item>
+            <ion-thumbnail slot="start">
+              
+              <img src="https://i.ibb.co/b27sV6k/videos.png">
+            </ion-thumbnail>
+            <ion-label>
+              <h3>Subir Videos:</h3>
+              
+              <ion-button href="../subir-videos">Abrir</ion-button>  
+            </ion-label>
+            
+          </ion-item>
+          <ion-item>
+            <ion-thumbnail slot="start">
+              <img src="https://i.ibb.co/YhdZHkZ/notas.png">
+            </ion-thumbnail>
+            <ion-label>
+              <h3>Subir Notas:</h3>
+              
+              <ion-button href="../ver-notas">Abrir</ion-button>
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-thumbnail slot="start">
+              <img src="https://i.ibb.co/sW710vs/progreso.png">
+            </ion-thumbnail>
+            <ion-label>
+              <h3>Progreso Estudiantes:</h3>
+              
+              <ion-button href="../progreso-est" >Abrir</ion-button>
+            </ion-label>
+          </ion-item>
+    
+          <ion-item>
+            <ion-thumbnail slot="start">
+              <img src="https://i.ibb.co/WkYtY5t/inter.png">
+            </ion-thumbnail>
+            <ion-label>
+              <h3>Campus Virtual:</h3>
+              
+              <ion-button href="https://campusvirtual.politecnicointernacional.edu.co/login/index.php" >Abrir</ion-button>
+            </ion-label>
+          </ion-item>
+    
+          <ion-item>
+            <ion-thumbnail slot="start">
+              <img src="https://i.ibb.co/HKdMs9S/videosyo.png">
+            </ion-thumbnail>
+            <ion-label>
+              <h3>Mis Videos</h3>
+              
+              <ion-button href="../mis-videos" >Abrir</ion-button>
+            </ion-label>
+          </ion-item>
+    
+        </ion-list>
+    </ion-card-content>
+    <p>Politecnico internacional® By Oscar Rodriguez Lopez</p>
+    </ion-card>
+
+ 
+</ion-content>
+

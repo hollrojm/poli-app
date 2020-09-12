@@ -1,0 +1,65 @@
+<ion-toolbar>
+  <ion-list id="inbox-list">
+    <div class="menu-header-bg">
+      <div class="fnd"></div>
+    </div>
+    <div class="contenido-header">
+      <h1></h1>
+        <h2>Crea tu cuenta</h2>
+    </div>
+  </ion-list>
+</ion-toolbar>
+
+
+<ion-content>
+  
+      <ion-row>
+        <ion-col class="inputs">
+          <ion-item>
+            <ion-label position="floating">Correo:</ion-label>
+            <ion-input type="email" required #email></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <form action="" method="post">
+        <ion-row>
+          <ion-col class="inputs">
+            <ion-item>
+              <ion-label position="floating">Contraseña:</ion-label>
+              <ion-input type="password" #password  required></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col class="inputs">
+            <ion-item>
+              <ion-label position="floating">Confirmar contraseña:</ion-label>
+              
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-button type="submit" (click)="onRegister(email, password)" expand="block">Register</ion-button>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col class="inputs">
+            <ion-button expand="block" href="../login" required>Volver</ion-button>
+          </ion-col>
+        </ion-row>
+        <div class="text-center">
+        <ion-row>
+          <ion-col >
+            <p>
+              <a routerLink="/login" > Ya tienes un cuenta? </a>
+            </p>
+          </ion-col>
+        </ion-row>
+      </div>
+      </form>
+  
+</ion-content>

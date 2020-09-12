@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar class="item">
+    <ion-title>Verificacion </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="user$ | async as user">
+ 
+<ion-card class="item">
+  <ion-item class="item">
+    
+    <ion-text color="secondary">
+      <h1>Gracias Por Registrarte!</h1>
+    </ion-text>
+   
+  </ion-item>
+  <ion-card-content>
+    <ion-row>
+      <ion-col>
+        
+        
+        <ion-text color="dark">
+          <h3> te enviamos un Link para confirmar tu Correo: <strong>{{user.email}}</strong></h3>
+        </ion-text>
+      
+          </ion-col>
+    </ion-row>
+
+    <img src="https://i.ibb.co/hsWTgq8/cel2.png" alt="Cel1" class="ion-align-self-end">
+
+    <ion-row>
+      <ion-text color="dark">
+        <h3> Por fa, Revisa tu email para seguir con el proceso de tu registro jeje</h3>
+      </ion-text>
+
+      <ion-col>
+        <ion-button type="submit" color="primary" expand="block" (click)="onSendEmail()"
+          >Reenviar codigo de verificacion</ion-button>
+          <ion-button expand="block" href="../login" required>Volver</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-card-content>
+</ion-card>
+<style>
+  .item{
+    text-align: center;
+    align-content: rigth;
+  }
+</style>
+</ion-content>
