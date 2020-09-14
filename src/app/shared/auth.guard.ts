@@ -3,6 +3,7 @@ import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, UrlTree, Rout
 import { Observable } from 'rxjs';
 import { AuthService } from '../service/auth.service';
 import { take, map } from 'rxjs/operators';
+import { MsalGuard } from '@azure/msal-angular';
 
 @Injectable({
   providedIn: 'root',
